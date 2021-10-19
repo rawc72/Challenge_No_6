@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherData</title>
+</head>
+
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <main>
+        <section class="left-panel">
+            <h2>Search for a City:</h2>
+            <input type="text" id='city' onkeyup="checkInput()" />
+            <button id="search" class="submitButton ripple" disabled onclick="search()">Search</button>
+            <div class="divider"></div>
+            <div id="history">
+                <button id="search" class="historyButton ripple" onclick="getWeather( 'New York', 40.7127281, -74.0060152)">
+                New York
+                </button>
+                <button id="search" class="historyButton ripple" onclick="getWeather( 'Toronto', 43.6534817, -79.3839347)">
+                Toronto
+                </button>
+            </div>
+        </section>
+        <article id="weather-panel" class="hide">
+            <section class="current-panel">
+                <div class="sameRow">
+                    <div id="currentCity" class="cityTitle">Atlanta (3/30/2021)</div>
+                    <div id="currentIcon"><img alt="weather" src="http://openweathermap.org/img/wn/02n.png" /></div>
+                </div>
+                <div id="currentTemp" class="weatherText">Temp: 74.01&deg;F</div>
+                <div id="currentWind" class="weatherText">Wind: 6.67 MPH</div>
+                <div id="currentHumidity" class="weatherText">Humidity: 46%</div>
+                <div class="sameRow">
+                    <div id="currentUVLabel" class="weatherText">UV Index: </div>
+                    <div id="currentUVValue" class="weatherText uvGreen">0.47</div>
+                </div>
+            </section>
+            <section class="future-panel">
+                <div class="futureTitle">5-Day Forecast:</div>
+                <div id="futureCards" class="futureCards">
+                    <div class="card">
+                        <div class="futureWeatherTextTitle">3/31/2021</div>
+                        <div class="weatherIcon"><img alt="weather" src="http://openweathermap.org/img/wn/13d.png" />
+                        </div>
+                        <div class="futureWeatherText">Temp: 74.01&deg;F</div>
+                        <div class="futureWeatherText">Wind: 6.67 MPH</div>
+                        <div class="futureWeatherText">Humidity: 46%</div>
+                    </div>
+                    <div class="card">
+                        <div class="futureWeatherTextTitle">4/01/2021</div>
+                        <div class="weatherIcon"><img alt="weather" src="http://openweathermap.org/img/wn/10d.png" />
+                        </div>
+                        <div class="futureWeatherText">Temp: 74.01&deg;F</div>
+                        <div class="futureWeatherText">Wind: 6.67 MPH</div>
+                        <div class="futureWeatherText">Humidity: 46%</div>
+                    </div>
+                    <div class="card">
+                        <div class="futureWeatherTextTitle">4/02/2021</div>
+                        <div class="weatherIcon"><img alt="weather" src="http://openweathermap.org/img/wn/09d.png" />
+                        </div>
+                        <div class="futureWeatherText">Temp: 74.01&deg;F</div>
+                        <div class="futureWeatherText">Wind: 6.67 MPH</div>
+                        <div class="futureWeatherText">Humidity: 46%</div>
+                    </div>
+                    <div class="card">
+                        <div class="futureWeatherTextTitle">4/03/2021</div>
+                        <div class="weatherIcon"><img alt="weather" src="http://openweathermap.org/img/wn/11d.png" />
+                        </div>
+                        <div class="futureWeatherText">Temp: 74.01&deg;F</div>
+                        <div class="futureWeatherText">Wind: 6.67 MPH</div>
+                        <div class="futureWeatherText">Humidity: 46%</div>
+                    </div>
+                    <div class="card">
+                        <div class="futureWeatherTextTitle">4/04/2021</div>
+                        <div class="weatherIcon"><img alt="weather" src="http://openweathermap.org/img/wn/01d.png" />
+                        </div>
+                        <div class="futureWeatherText">Temp: 74.01&deg;F</div>
+                        <div class="futureWeatherText">Wind: 6.67 MPH</div>
+                        <div class="futureWeatherText">Humidity: 46%</div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
