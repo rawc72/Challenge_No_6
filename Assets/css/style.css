@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+  min-width: 630px;
+}
+
+header {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+  background-image: linear-gradient(to right, #3a68bd 0%, #250b5b 100%);
+  color: #ffffff;
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.left-panel {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 25px;
+  width: 25%;
+}
+
+input {
+  margin-top: 5px;
+  padding-left: 10px;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  border-color: #808080;
+  border-width: 1px;
+  font-size: 24px;
+  color: #808080;
+}
+
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.submitButton {
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #5aa2e9;
+  border-width: 0ch;
+  font-size: 24px;
+  color: white;
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+}
+
+button:hover:disabled {
+  cursor: not-allowed;
+}
+
+.divider {
+  margin-top: 20px;
+  width: 100%;
+  border-bottom: 2px solid #808080;
+}
+
+.historyButton {
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #b7b7b7;
+  border-width: 0ch;
+  font-size: 24px;
+  color: white;
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+}
+
+.current-panel {
+  width: 100%;
+  height: 235px;
+  padding-left: 10px;
+  padding-top: 20px;
+  border: 1px solid #808080;
+}
+
+.future-panel {
+  margin-top: 20px;
+}
+
+article {
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 75%;
+}
+
+.sameRow {
+  display: flex;
+  align-items: center;
+}
+
+.cityTitle {
+  font-size: 32px;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  padding-left: 5px;
+}
+
+.futureTitle {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+}
+
+.weatherText {
+  margin-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.uvGreen {
+  background-color: darkgreen;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+.uvYellow {
+  background-color: yellow;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 2px;
+  color: #2e2d2d;
+}
+
+.uvOrange {
+  background-color: orange;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+.uvRed {
+  background-color: red;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 2px;
+  color: #ffffff;
+}
+
+.futureCards {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weatherIcon {
+  background-image: linear-gradient(0deg, #33475a, #808080 50%, #33475a);
+}
+
+.card {
+  width: 16%;
+  height: 250px;
+  background-color: #33475a;
+}
+
+.futureWeatherTextTitle {
+  margin-top: 15px;
+  padding-left: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.futureWeatherText {
+  margin-top: 15px;
+  padding-left: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1256px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .left-panel {
+    margin-right: 15px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  input {
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .submitButton {
+    margin-top: 10px;
+    font-size: 20px;
+    height: 35px;
+  }
+
+  .divider {
+    margin-top: 10px;
+  }
+
+  .historyButton {
+    margin-top: 10px;
+    font-size: 20px;
+    height: 35px;
+  }
+
+  .current-panel {
+    height: 180px;
+    padding-top: 5px;
+  }
+
+  .weatherText {
+    margin-top: 8px;
+  }
+
+  .cityTitle {
+    font-size: 20px;
+  }
+
+  .weatherText {
+    font-size: 14px;
+  }
+
+  .futureTitle {
+    font-size: 20px;
+  }
+
+  .futureWeatherTextTitle {
+    font-size: 16px;
+  }
+
+  .futureWeatherText {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .card {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .left-panel {
+    margin-right: 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  input {
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .submitButton {
+    font-size: 16px;
+    height: 30px;
+  }
+
+  .historyButton {
+    font-size: 16px;
+    height: 35px;
+  }
+
+  .cityTitle {
+    font-size: 18px;
+  }
+
+  .futureTitle {
+    font-size: 18px;
+  }
+
+  .futureWeatherTextTitle {
+    padding-left: 5px;
+    font-size: 12px;
+  }
+
+  .futureWeatherText {
+    padding-left: 5px;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+
+  .card {
+    height: 150px;
+  }
+}
