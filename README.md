@@ -1,7 +1,7 @@
 # Weather Dashboard:
 The objective of this assignment is to identify the developers skills as it relates to the his/her ability to retrie data from another application's API and use it within the context of their own application. Third-party APIs allow developers to access data and functionality by making requests with specific parameters to a URL. 
 
-The assignemnt seeks to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. Also, I will use the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) to retrieve weather data for different cities and store the data in my `localStorage`.
+The assignemnt seeks to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. Also, I will use the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) to retrieve weather data for different cities and store the data in my storage
 
 ## User Story:
 As a world traveler, I want to be able to plan my trips with foresight and to see the weather conditions of the countries/cities I plan to visit (current and future conditions). I want the ability to enter an application and plan 5-days ahead. I want the application to store the last few cities I reviewed for ease of consultation. 
