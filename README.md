@@ -20,10 +20,11 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
 ## Screenshot:
-Screenshot pending.
+https://github.com/rawc72/Challenge_No_6/issues/1#issue-1033570777
 
 ## Link to deployed application:
-Deployed application pending.
+https://rawc72.github.io/Challenge_No_6/
+
 
 
 
