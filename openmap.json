@@ -1,0 +1,16 @@
+[
+  {
+    "place_id": 258436237,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "relation",
+    "osm_id": 2989349,
+    "boundingbox": ["43.610384", "43.7360196", "-79.492821", "-79.2785104"],
+    "lat": "43.6534817",
+    "lon": "-79.3839347",
+    "display_name": "Toronto, Golden Horseshoe, Ontario, Canada",
+    "class": "boundary",
+    "type": "administrative",
+    "importance": 0.8130149417022804,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png"
+  }
+]
